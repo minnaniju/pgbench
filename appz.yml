@@ -1,7 +1,7 @@
 app:
     name: PGBENCH
     code: pgbench
-    notify: aborra@ecloudcontrol.com
+    notify: mniju@ecloudcontrol.com
 
 build:
     version: 0.1
@@ -11,7 +11,7 @@ build:
     image_template: pgbench-10.0
 
 deploy:
-    context: anushab7/DEV
+    context: minnaniju/DEV
     type: statefulset
     replicas: 1
     port:
@@ -23,7 +23,7 @@ volumes:
     size: 10Gi
 
 properties:
-    DATABASE_HOST: postgres-ha-13-x-1.postgres-ha-13-x
+    DATABASE_HOST: postgres13-master-13-x
     DATABASE_USER: postgres
     DATABASE_PORT: 5432
     DATABASE_NAME: springbootweb

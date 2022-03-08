@@ -34,7 +34,7 @@ properties:
     PGBENCH_CLIENTS: 5
     PGBENCH_RATE: 10
     PGBENCH_THREADS: 2
-    PGBENCH_DURATION: 10
+    PGBENCH_DURATION: 60
     PGBENCH_SCRIPT: tpcb-like
     TEST_NAME: pgbench-test
     revision: 33

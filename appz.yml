@@ -23,9 +23,9 @@ volumes:
     size: 10Gi
 
 properties:
-    DATABASE_HOST: postgres-ha-13-x
+    DATABASE_HOST: pgconnect-0-2  
     DATABASE_USER: springbootweb
-    DATABASE_PORT: 5432
+    DATABASE_PORT: 5000
     DATABASE_NAME: springbootweb
     DATABASE_PASSWORD: 
        vault: POSTGRESQL_SPRINGBOOT_PASSWORD

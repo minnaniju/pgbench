@@ -19,12 +19,11 @@ deploy:
 volumes:
   - claim: pgbench-data
     mount: /appz/log/results
-    class: microk8s-hostpath
     name: data
     size: 10Gi
 
 properties:
-    DATABASE_HOST: postgres13-master-13-y
+    DATABASE_HOST: postgres-ha-13-x
     DATABASE_USER: springbootweb
     DATABASE_PORT: 5432
     DATABASE_NAME: springbootweb
